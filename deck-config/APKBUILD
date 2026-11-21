@@ -1,0 +1,15 @@
+pkgname=deck-config
+pkgver=1.0
+pkgrel=0
+pkgdesc="Writing deck: system configuration"
+url="https://github.com/bob3000/deck"
+arch="noarch"
+license="MIT"
+options="!check"
+install="$pkgname.post-install"
+
+package() {
+    mkdir -p "$pkgdir"
+    cp -a "$startdir"/files/. "$pkgdir"/
+    chmod 0400 "$pkgdir"/etc/doas.d/*.conf
+}

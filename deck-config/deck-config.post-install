@@ -1,0 +1,7 @@
+#!/bin/sh
+services="iwd tlp elogind greetd"
+
+for s in $services; do
+  rc-update add "$s" default >/dev/null 2>&1 || true
+done
+exit 0

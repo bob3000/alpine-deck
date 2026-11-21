@@ -1,0 +1,22 @@
+headerbar, .titlebar {
+  min-height: 0;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: none;
+  box-shadow: none;
+  opacity: 0;
+  font-size: 0;
+}
+
+window {
+   background-image: url("file:///usr/share/backgrounds/default.png");
+   background-size: cover;
+   background-position: center;
+}
+
+box#body {
+   background-color: rgba(50, 50, 50, 0.5);
+   border-radius: 10px;
+   padding: 50px;
+}
